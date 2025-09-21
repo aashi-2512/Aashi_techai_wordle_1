@@ -1,7 +1,7 @@
 # Aashi_techai_wordle_1
 A terminal-based Wordle clone written in Python
 ##This game allows users to guess a random 5-letter word with feedback provided using emoji icons for each guess:
-🟩 Green square – correct letter in the correct position
+🟩 Green square – correct letter in the correct position \n
 🟨 Yellow square – correct letter in the wrong position
 ⬛ Black square – incorrect letter
 
