@@ -20,8 +20,7 @@ def evaluating(guess,ans):       # function to give feedback after every guess.
         if result[i]=='':        # to ensure we are not over-writing the correct guess
             if guess[i] in ans_chars:
                 result[i]=get_color("yellow")
-                ans_chars[ans_chars.index(guess[i])] = None # to mark a character as already matched,if there is any character that are repeating ,it's not reassigned yellow color because user has typed it once.
-            else:
+                ans_chars[ans_chars.index(guess[i])] = None # to mark a character as already matched,if there is any character that is repeating ,it won't reassign yellow color .
                 result[i]=get_color("black")    # for assigning wrong guesses.
     return ' '.join(result)
 
@@ -53,7 +52,7 @@ def game_setup():                  # function to choose random word, display gam
         if guess==ans:
             print("Congratulation! You guessed the right word.")
     else:
-        print(f"Alas! You were unable to guess the right world.The word was {ans.upper()}")
+        print(f"Alas! You were unable to guess the right word.The word was {ans.upper()}")
 
 def  main():   #to print a few instructions.
     print("Welcome to WORDLE!")
@@ -61,3 +60,4 @@ def  main():   #to print a few instructions.
     game_setup()
 
 main()
+
